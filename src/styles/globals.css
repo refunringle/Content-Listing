@@ -2,25 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* Import Titillium Web fonts */
 @font-face {
-  font-family: 'Titillium Web';
-  src: url('/fonts/TitilliumWeb-Regular.ttf') format('truetype');
+  font-family: "Titillium Web";
+  src: url("/fonts/TitilliumWeb-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Titillium Web';
-  src: url('/fonts/TitilliumWeb-Bold.ttf') format('truetype');
+  font-family: "Titillium Web";
+  src: url("/fonts/TitilliumWeb-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
+/* Define CSS variables for light and dark themes */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --font-titillium: 'Titillium Web', sans-serif;
+  --background: #171717; /* Background color */
+  --foreground: #ffffff; /* Text color */
+  --font-titillium: "Titillium Web", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,12 +31,18 @@
   }
 }
 
+/* Apply the custom font, background, and text colors globally */
 body {
+  background-color: var(--background);
   color: var(--foreground);
-  background: var(--background);
-  font-family: var(--font-titillium), sans-serif;
+  font-family: var(--font-titillium);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
 }
 
+/* Add custom utility class */
 @layer utilities {
   .text-balance {
     text-wrap: balance;
