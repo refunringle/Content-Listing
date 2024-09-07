@@ -1,5 +1,7 @@
 import '@/styles/globals.css';
+import { SWRConfig } from 'swr';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { useAxios } from '@/components/hooks';
 
 const theme = createTheme({
   palette: {
@@ -9,10 +11,19 @@ const theme = createTheme({
   },
 });
 
+const api = useAxios();
+const fetcher = (resource, init) =>
+  api(resource, init).then((res) => res.data);
+
+const options = { fetcher: fetcher };
+
+
 export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
+      <SWRConfig value={options}>
+        <Component {...pageProps} />
+      </SWRConfig>
     </ThemeProvider>
   );
 }
