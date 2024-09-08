@@ -11,12 +11,13 @@ const theme = createTheme({
   },
 });
 
-const api = useAxios();
-const fetcher = (resource, init) => api(resource, init).then((res) => res.data);
-
-const options = { fetcher: fetcher };
-
 export default function App({ Component, pageProps }) {
+  const api = useAxios();
+  const fetcher = (resource, init) =>
+    api(resource, init).then((res) => res.data);
+
+  const options = { fetcher: fetcher };
+
   return (
     <ThemeProvider theme={theme}>
       <SWRConfig value={options}>
