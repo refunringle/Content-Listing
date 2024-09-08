@@ -1,6 +1,6 @@
 # Content Listing
 
-Welcome to the Content Listing project! This ReactJS application showcases a listing grid with lazy loading and client-side search functionalities. Below you will find comprehensive instructions for setting up, running, and understanding the project.
+Welcome to the Content Listing project! This NextJs application showcases a listing grid with lazy loading and client-side search functionalities. Below you will find comprehensive instructions for setting up, running, and understanding the project.
 
 ## Table of Contents
 
@@ -39,6 +39,14 @@ To build the project for production, use:
 npm run build
 ```
 
+### Live Demo
+
+Use this Url for live demo:
+
+```bash
+https://
+```
+
 ## Design Guidelines
 
 Mobile Portrait View: The application is designed exclusively for mobile portrait view. Desktop or landscape dimensions are not considered.
@@ -73,13 +81,27 @@ Images API: Access images via /images/ (e.g., poster1.jpg)
 
 The Images API provides necessary images for the test, including UI elements and poster images.
 
+## Installed Packages
+
+The following are the key packages and dependencies used in this project:
+
+@heroicons/react: A set of free high-quality icons for React applications.
+
+@mui/material: Material-UI, a popular React UI framework.
+
+axios: A promise-based HTTP client for making requests to APIs.
+
+swr: A React hook for data fetching, supporting caching, revalidation, and more.
+
+tailwind CSS: A utility-first CSS framework for building responsive and highly customizable user interfaces. Used for styling across the application.
+
 ## Development Guidelines
 
 Pixel-Perfect Design: Ensure features closely match the provided design specifications.
 
 Code Structure: Adhere to best practices for code organization and structure.
 
-ReactJS Concepts: Demonstrate proficiency with ReactJS concepts, including components, state, props, lifecycle methods, and hooks.
+NextJs Concepts: Demonstrate proficiency with NextJs concepts, page routing, including components, state, props, caching, server side rendering, and hooks.
 
 Edge Cases: Handle edge cases effectively, particularly for items on Page 3.
 
@@ -90,6 +112,12 @@ API Integration: Integrate with the provided backend APIs, managing asynchronous
 ## Contributing
 
 Contributions are welcome! Please submit pull requests with improvements or bug fixes. Ensure that changes follow the project's coding standards and guidelines.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://NextJs.org/).
 
 ## License
 
