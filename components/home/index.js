@@ -106,7 +106,7 @@ export default function Home() {
       {isSearching && !search.length > 0 ? (
         <div className="flex flex-col items-center justify-center min-h-screen p-4 space-y-4">
           <p className="text-lg font-semibold text-gray-700 dark:text-gray-300 text-center md:text-xl lg:text-2xl">
-            Start typing to search for movies.
+            Start typing to search for contents.
           </p>
           <p className="text-sm text-gray-500 dark:text-gray-400 text-center md:text-base lg:text-lg">
             Enter keywords or movie titles in the search bar above to find what
