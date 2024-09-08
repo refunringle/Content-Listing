@@ -4,14 +4,14 @@
 
 /* Import Titillium Web fonts */
 @font-face {
-  font-family: "Titillium Web";
+  font-family: "titillium-web";
   src: url("/fonts/TitilliumWeb-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Titillium Web";
+  font-family: "titillium-web-bolt";
   src: url("/fonts/TitilliumWeb-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
@@ -35,7 +35,7 @@
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: var(--font-titillium);
+  font-family: var(--font-titillium-web);
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -48,3 +48,35 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Hide scrollbar */
+.app-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-container {
+  overflow-y: auto;
+  flex: 1;
+  padding-bottom: 1rem;
+}
+
+/* Hide scrollbar for Webkit browsers */
+.grid-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for other browsers */
+.grid-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Header Sticky */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+

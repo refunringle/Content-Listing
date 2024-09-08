@@ -1,13 +1,13 @@
-import HeaderComponent from "@/components/home/header";
+import Home from "@/components/home";
 import Layout from "@/components/layout";
 
-export default function Home() {
+export default function Main() {
   return (
-    <HeaderComponent />
+    <Home />
   );
 }
 
 
-Home.getLayout = function getLayout(page) {
+Main.getLayout = function getLayout(page) {
   return <Layout>{page}</Layout>;
 };
