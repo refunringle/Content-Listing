@@ -110,7 +110,7 @@ export default function Home() {
           </p>
           <p className="text-sm text-gray-500 dark:text-gray-400 text-center md:text-base lg:text-lg">
             Enter keywords or movie titles in the search bar above to find what
-            you're looking for.
+            you&apos;re looking for.
           </p>
           <div className="mt-4 animate-spin rounded-full h-24 w-24 border-t-4 border-blue-500" />
         </div>
